@@ -17,7 +17,12 @@
         <link rel="stylesheet" href="css/fonts.css">
         <!--Styles-->
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/game.css">
+        <!--JS-->
+        <script type="text/javascript" src="js/board.js"></script>
+        <script type="text/javascript" src="js/player.js"></script>
+        <script type="text/javascript" src="js/timer.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -28,20 +33,44 @@
                 </div>
             </div>
             <div class="content">
-                <div class="menuContainer">
-                    <div class="menu">
-                        <button class="button" onclick="location.href='play.html';">
-                            <img class="tab" src="assets/svg/redtab.svg">
-                            <a>Play</a>
-                            <img class="tab" src="assets/svg/bluetab.svg">
-                        </button>
-                        <button class="button" onclick="location.href='loadgame.html';">
-                            <a>Saved Games</a>
-                        </button>
-                        <button class="button" onclick="location.href='contact.html';">
-                            <a>Contact</a>
-                        </button>
+                <div id="game">
+                    <div id="generalTime">
+                        <p id="time">00:00</p>
                     </div>
+                    <div id="gameBoard">
+                        <div id="play-area"></div>
+                        <div id="divider"></div>
+                        <div id="menu">
+                            <div class="playerContainer">
+                                <div class="player">
+                                    <div class="playerTab">
+                                        <img class="tab" src="assets/svg/redtab.svg">
+                                        <p id="p1-name">RedPlayer</p>
+                                    </div>
+                                    <p id="p1-time">00:00</p>
+                                </div>
+                                <div id="turn">
+                                    <img id="turnTab" src="assets/svg/redtab.svg">
+                                </div>
+                                <div class="player">
+                                    <div class="playerTab">
+                                        <img class="tab" src="assets/svg/bluetab.svg">
+                                        <p id="p2-name">BluePlayer</p>
+                                    </div>
+                                    <p id="p2-time">00:00</p>
+                                </div>
+                            </div>
+                            <button id="reset" class="button">Reset</button>
+                            <button id="save" class="button">Save Game</button>
+                        </div>
+                    </div>
+                    <div id="finalMessage" class="none">
+                        <p id="winner" class="nameWinner"></p>
+                        <p id="message" class="msjWinner"></p>
+                    </div>
+                    <button class="button mainMenu" onclick="location.href='index.html';">
+                        <a>Main Menu</a>
+                    </button>
                 </div>
             </div>
             <div class="footer">

@@ -1,0 +1,94 @@
+#games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color:white;
+}
+
+#empty {
+    font-size: 1.5rem;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.game:hover {
+    background-color: #FF310A;
+}
+
+.game:focus {
+    outline: none;
+    border: 2px solid #FF310A;
+}
+
+.match-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    margin: 0.5em 1em 0 1em;
+    font-size: 1em;
+    pointer-events: none;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0.5em;
+}
+
+.match-container p {
+    padding: 0;
+    margin: 0;
+}
+
+.date {
+    margin: 0.3em 0;
+    padding: 0;
+    font-size: 0.6em;
+    pointer-events: none;
+}
+
+.delete {
+    margin: 0.1em 0;
+    padding: 0.1em 0.5em;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: white;
+    transition: 0.3s;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#navigation-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

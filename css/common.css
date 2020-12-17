@@ -58,6 +58,12 @@ body {
 
 /*Menu styles*/
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .button {
     display: flex;
     flex-direction: row;
@@ -76,6 +82,10 @@ body {
 
 .button:hover {
     background: #FF310A;
+}
+
+.mainMenu{
+    width: 50%;
 }
 
 .tab{
