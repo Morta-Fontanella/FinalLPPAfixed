@@ -1,0 +1,147 @@
+/* Variables*/
+
+:root{
+--colorsolido: #111111;
+--colortransparente: #1111118e;
+}
+
+/*Main*/
+
+body {
+    background: rgb(51,51,51);
+    background: linear-gradient(0deg, rgb(29, 29, 29) 0%, rgba(101,101,101,1) 100%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/*Header styles*/
+
+.header {
+    height: 80px;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: var(--colortransparente);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerLogoType {
+    width: 13vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: start;
+}
+
+.headerLogo {
+    height: 70px;
+    padding-right: 20px;
+}
+
+.headerName {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.button:hover {
+    background: #FF310A;
+}
+
+.tab{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    height: 32px;
+}
+
+/*Footer styles*/
+
+.footer{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    background-color: var(--colortransparente);
+    color: white;
+}
+
+.footerDesing {
+    justify-self: flex-end;
+    margin-right: 1rem;
+}
+.footerButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerButton {
+    margin-right: 1rem;
+    padding: 0.2rem;
+    border-radius: 3px;
+    border: 1px solid white;
+
+}
+
+.footerButton a{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footerButton a span{
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+
+.footerButton:hover {
+    cursor: pointer;
+    background: #FF310A;
+}
+
+@media only screen and (max-width: 690px) {
+.footer{
+    flex-direction: column;
+    height: 200px;
+}
+.footerButtons {
+    flex-direction: column;
+}
+.footerButton {
+    margin-bottom: 0.5rem;
+}
+}
