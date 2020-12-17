@@ -1,0 +1,51 @@
+.textBox {
+    margin-bottom: 20px;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.textBox input {
+    margin: 2px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    height: 30px;
+    color: white;
+}
+
+.textBox input:focus {
+    outline: none;
+}
+
+p {
+    color: white;
+    font-size: 19px;
+    letter-spacing: -0.025em;
+}
+
+.line {
+    height: 2px;
+    background: white;
+}
+
+.error {
+    margin-top: 0.3rem;
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+.message {
+    margin: 2px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    height: 70px;
+    resize: none;
+    color: white;
+}
+
+.message:focus{
+    outline: none;
+}

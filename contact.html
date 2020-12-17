@@ -17,7 +17,9 @@
         <link rel="stylesheet" href="css/fonts.css">
         <!--Styles-->
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <!--JS-->
+        <script type="text/javascript" src="js/contact.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -28,7 +30,40 @@
                 </div>
             </div>
             <div class="content">
-
+                <div class="menuContainer">
+                    <div class="menu">
+                        <div class="textBox">
+                            <div class="title">
+                                <p class="pp">Name</p>
+                            </div>
+                            <input id="name" class="input-field" type="text" />
+                            <div class="line"></div>
+                            <p class="error" id="nameError">*must be at least 3 letters</p>
+                        </div>
+                        <div class="textBox">
+                            <div class="title">
+                                <p class="pp">Email</p>
+                            </div>
+                            <input id="email" class="input-field" type="text" />
+                            <div class="line"></div>
+                            <p class="error" id="emailError">*invalid email</p>
+                        </div>
+                        <div class="textBox">
+                            <div class="title">
+                                <p class="pp">Message</p>
+                            </div>
+                            <textarea id="comments" class="message" rows="10" cols="50"></textarea>
+                            <div class="line"></div>
+                            <p class="error" id="messageError">*must be at least 1 character</p>
+                        </div>
+                        <button id="send-btn" class="button playbutton">
+                            <a>Send</a>
+                        </button>
+                    </div>
+                </div>
+                <button class="button mainMenu" onclick="location.href='index.html';">
+                    <a>Main Menu</a>
+                </button>
             </div>
             <div class="footer">
                 <div class="footerButtons">
