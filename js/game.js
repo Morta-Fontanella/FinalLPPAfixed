@@ -12,7 +12,6 @@ var globalTimerHTML = null;
 var finalMessage = null;
 var popupMessage = null;
 var popupWinner = null;
-var resetBtn, saveBtn = null;
 var board = null;
 var turn = null;
 var lastUpdatedTime = new Date().getTime();
@@ -36,22 +35,6 @@ var twoPlayerBoard = [
     [null, null, null, null, null, null],
     [null, null, null, null, null, null]
 ];
-
-/*Reset function*/
-var resetGame = function () {
-    boardHTML.className = '';
-    if (saving) {
-        saving = false;
-        globalTimer.startTimer();
-        (turn === 'p1') ? p1Timer.startTimer() : (turn === 'p2' ? p2Timer.startTimer() : console.log('Test'));
-    } else {
-        gameOver = false;
-        board.resetBoard();
-        board.render();
-        resetTimers();
-        setTimeout(toggleTurn, 1);
-    }
-}
 
 /*Reset timmers function*/
 var resetTimers = function () {
@@ -295,7 +278,6 @@ window.onload = function () {
     globalTimerHTML = document.getElementById('time');
     columnsHTML = document.getElementsByClassName('column');
     boardHTML = document.getElementById('play-area');
-    resetBtn = document.getElementById('reset');
     finalMessage = document.getElementById('finalMessage');
     popupMessage = document.getElementById('message');
     popupWinner = document.getElementById('winner');

@@ -82,6 +82,7 @@ body {
 
 .button:hover {
     background: #FF310A;
+    cursor: pointer;
 }
 
 .mainMenu{
