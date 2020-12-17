@@ -56,6 +56,8 @@ body {
     font-weight: 600;
 }
 
+/*Menu styles*/
+
 .button {
     display: flex;
     flex-direction: row;
@@ -77,8 +79,24 @@ body {
 }
 
 .tab{
-    padding: 0.5rem 2rem 0.5rem 2rem;
     height: 32px;
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background: #1111118e;
+    padding: 2rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Footer styles*/

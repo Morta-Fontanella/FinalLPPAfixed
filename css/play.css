@@ -1,0 +1,16 @@
+.button{
+    justify-content: space-between;
+}
+
+.players3:hover{
+    cursor: default;
+    opacity: 15%;
+}
+
+.tab {
+    padding: 0.5rem 0.1rem 0.5rem 0.1rem;
+}
+
+.tabContainer{
+    display: flex;
+}
