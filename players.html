@@ -18,6 +18,8 @@
         <!--Styles-->
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/players.css">
+        <!--JS-->
+        <script type="text/javascript" src="js/players.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -28,7 +30,35 @@
                 </div>
             </div>
             <div class="content">
-
+                <div class="menuContainer">
+                    <div class="menu">
+                        <div class="textBox">
+                            <div class="title">
+                                <div class="playerTitle">
+                                    <img class="tab" src="assets/svg/redtab.svg">
+                                    <p class="pp">Red Player</p>
+                                </div>
+                            </div>
+                            <input id="p1-name" class="input-field" type="text" />
+                            <div class="line"></div>
+                            <p class="error" id="redError">*must be at least 3 letters</p>
+                        </div>
+                        <div class="textBox">
+                            <div class="title">
+                                <div class="playerTitle">
+                                    <img class="tab" src="assets/svg/bluetab.svg">
+                                    <p class="pp">Blue Player</p>
+                                </div>
+                            </div>
+                            <input id="p2-name" class="input-field" type="text" />
+                            <div class="line"></div>
+                            <p class="error" id="blueError">*must be at least 3 letters</p>
+                        </div>
+                        <button id="start-btn" class="button playbutton">
+                            <a>Play</a>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="footer">
                 <div class="footerButtons">
